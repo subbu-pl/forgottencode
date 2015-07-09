@@ -3,6 +3,7 @@ package com.hackathon.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -13,7 +14,8 @@ public class Customer {
 	
 	@Id
 	@Column(name="SMART_METER_ID")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GenericGenerator(name="kaugen" , strategy="increment")
+	@GeneratedValue(generator="kaugen")
 	private int smartMeterId;
 	
 	@Column(name="CUST_FIRST_NAME")
@@ -39,6 +41,9 @@ public class Customer {
 	
 	@Column(name="PHONE")
 	private int phone;
+	
+	@Column(name="BILLING_DATE")
+	private int billingDate;
 
 	public int getSmartMeterId() {
 		return smartMeterId;
@@ -110,6 +115,14 @@ public class Customer {
 
 	public void setPhone(int phone) {
 		this.phone = phone;
+	}
+
+	public int getBillingDate() {
+		return billingDate;
+	}
+
+	public void setBillingDate(int billingDate) {
+		this.billingDate = billingDate;
 	}
 	
 	
