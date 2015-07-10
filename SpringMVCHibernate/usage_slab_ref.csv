@@ -1,0 +1,5 @@
+"usage_Slab_id";"usage_tier_start";"usage_tier_end";"rate_per_unit"
+1;0;300;1.25
+2;301;600;1.75
+3;601;1000;2.25
+4;1001;0;2.75

@@ -1,0 +1,49 @@
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Forgotten123';
+
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('1', '24680003', '2015-06-29 01:02:03', '5700', '2015-06-29 01:02:03', '6000',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('2', '24680003', '2015-06-21 01:02:03', '5300', '2015-06-22 01:02:03', '5699',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('3', '24680003', '2015-06-02 01:02:03', '2000', '2015-06-02 01:02:03', '4999',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('4', '24680004', '2015-06-29 01:02:03', '4000', '2015-06-29 01:02:03', '6000',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('5', '24680004', '2015-06-21 01:02:03', '3200', '2015-06-22 01:02:03', '3999',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('6', '24680004', '2015-06-02 01:02:03', '3000', '2015-06-02 01:02:03', '3199',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('7', '24680063', '2015-06-29 01:02:03', '4000', '2015-06-29 01:02:03', '6199',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('8', '24680063', '2015-06-21 01:02:03', '3200', '2015-06-22 01:02:03', '3999',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('9', '24680063', '2015-06-02 01:02:03', '3000', '2015-06-02 01:02:03', '3199',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('10', '24680063', '2015-06-30 01:02:03', '6200', '2015-06-30 01:02:03', '6400',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('13', '24680007', '2015-06-29 01:02:03', '2051', '2015-06-29 01:02:03', '2300',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('14', '24680007', '2015-06-21 01:02:03', '2000', '2015-06-22 01:02:03', '2050',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('15', '24680037', '2015-06-09 01:02:03', '2000', '2015-06-09 01:02:03', '2500',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('16', '24680037', '2015-06-28 01:02:03', '2501', '2015-06-28 01:02:03', '2700',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('17', '24680067', '2015-06-21 01:02:03', '2000', '2015-06-22 01:02:03', '2650',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('18', '24680067', '2015-06-10 01:02:03', '1500', '2015-06-10 01:02:03', '1999',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('19', '24680097', '2015-06-29 01:02:03', '2051', '2015-06-29 01:02:03', '2300',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('20', '24680097', '2015-06-21 01:02:03', '2000', '2015-06-22 01:02:03', '2050',0,0);
+INSERT INTO `billing`.`monthly_usage_tr` (`USAGE_ID`, `SMART_METER_ID`, `START_TIME`, `MTR_START`, `END_TIME`, `MTR_END`,`Reading`,`Amount`) 
+VALUES ('21', '24680097', '2015-06-09 01:02:03', '1000', '2015-06-09 01:02:03', '1999',0,0);
+
+
+select smart_meter_id,mtr_start from monthly_usage_tr where date(Start_time) = 
+(select min(date(Start_time)) from monthly_usage_tr where date(Start_time) between (DATE_SUB(curdate(), INTERVAL 31 DAY)) 
+and curdate())
+
+select smart_meter_id,mtr_end from monthly_usage_tr where date(end_time) = 
+(select max(date(end_time)) from monthly_usage_tr where date(end_time) between (DATE_SUB(curdate(), INTERVAL 31 DAY)) 
+and curdate())

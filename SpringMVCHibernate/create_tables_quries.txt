@@ -1,0 +1,48 @@
+CREATE TABLE `customer` (
+  `SMART_METER_ID` int(11) NOT NULL,
+  `CUST_FIRST_NAME` varchar(45) DEFAULT NULL,
+  `CUST_LAST_NAME` varchar(45) DEFAULT NULL,
+  `ADDRESS1` varchar(45) DEFAULT NULL,
+  `ADDRESS2` varchar(45) DEFAULT NULL,
+  `CITY` varchar(45) DEFAULT NULL,
+  `STATE` varchar(45) DEFAULT NULL,
+  `ZIP` int(11) DEFAULT NULL,
+  `PHONE` int(20) DEFAULT NULL,
+  `BILLING_DATE` int(11) DEFAULT NULL,
+  PRIMARY KEY (`SMART_METER_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `invoice` (
+  `invoice_no` int(11) NOT NULL,
+  `units` int(11) DEFAULT NULL,
+  `amount` decimal(10,0) DEFAULT NULL,
+  `due_date` date DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `smart_meter_id` int(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `monthly_usage_tr` (
+  `USAGE_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `SMART_METER_ID` int(11) NOT NULL,
+  `START_TIME` datetime DEFAULT NULL,
+  `MTR_START` int(11) DEFAULT NULL,
+  `END_TIME` datetime DEFAULT NULL,
+  `MTR_END` int(11) DEFAULT NULL,
+  `READING` int(11) DEFAULT '0',
+  `AMOUNT` decimal(10,2) DEFAULT '0.00',
+  `INVOICE_NUMBER` varchar(45) DEFAULT NULL,
+  `DUE_DATE` date DEFAULT NULL,
+  `REMARKS` varchar(250) DEFAULT NULL,
+  `STATUS` varchar(20) DEFAULT NULL,
+  `UPDATED_DATE` datetime DEFAULT NULL,
+  `UPDATED_BY` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`USAGE_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `usage_slab_ref` (
+  `usage_Slab_id` int(11) NOT NULL,
+  `usage_tier_start` int(11) DEFAULT NULL,
+  `usage_tier_end` int(11) DEFAULT NULL,
+  `rate_per_unit` decimal(10,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
