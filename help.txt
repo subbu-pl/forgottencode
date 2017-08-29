@@ -1,0 +1,58 @@
+// Steps
+
+Install Node js version above 6.x
+
+visit https://cli.angular.io  to now the steps 
+
+	$ npm install -g @angular/cli
+
+To get Version details of Node and Angular CLI, go to DOS command
+promot and give following command.
+
+	$ ng -v
+
+Observe angular CLI version and Node version.
+
+$ ng new myapp
+$ cd myapp
+$ ng -v      (This will show angular version of CLI  )
+
+Installing without CLI:
+----------------------
+$ git clone https://github.com/angular/quickstart.git quickstart
+$ cd quickstart
+$ npm install
+
+To upgrade from Angular2 to Angular 4 , paste following code in project
+-----------------------------------------------------------------------
+npm install @angular/common@next @angular/compiler@next @angular/compiler-cli@next @angular/core@next @angular/forms@next @angular/http@next @angular/platform-browser@next @angular/platform-browser-dynamic@next @angular/platform-server@next @angular/router@next @angular/animations@next --save
+
+
+Then install Typescript  above 2.1.6
+
+$ npm install typescript@2.2.1 --save
+	$ npm start
+
+--------------------------------------------------------------------
+
+ 
+$ ng new angulartraining
+$ cd angulartraining
+
+install bootstrap
+
+$ npm install --save bootstrap@4.0.0-alpha.6 font-awesome
+
+open style.css and add below lines:
+
+------------------------------------------------------
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+body {
+    background-color:lightgoldenrodyellow
+}
+------------------------------------------------------
+
+$ ng serve
+
+Open Browser and type localhost:4200

@@ -1,0 +1,25 @@
+<h4 class="well text-left">
+        <div class="panel">Click your favorite Framework:</div>
+        <br/>
+         <li *ngFor="let item of Items" 
+        style="cursor:pointer;background-color:lightgreen;margin-left:40px;color:black" 
+            (click)="onItemClicked(item)">{{item.name}} 
+            <br/>
+            </li>  
+       <br>
+       <h4 class='well' *ngIf="clicked; then show else warn"></h4>
+          
+          <ng-template #show>
+               You have selected : 
+               <input type="text" [(ngModel)]="clickedItem.name">
+          </ng-template>
+       
+          <ng-template #warn>
+              <h4 class="text-danger"> 
+              Select your favorite framework !
+              </h4>
+          </ng-template>   
+       </h4>
+       <div class="container">
+       <latest-news></latest-news>
+       </div>

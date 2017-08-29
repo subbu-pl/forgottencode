@@ -1,0 +1,21 @@
+Name:
+<input type="text" [(ngModel)]="name">
+{{name | uppercase}}
+<br/>
+<br/>
+
+<h2 class='bgcolor'>
+ {{time}}
+</h2>
+<br/>
+<h3 [style.color]="titleStyle">Property Binding</h3>
+<br/>
+<button [disabled]="buttonStatus"
+    (click)="Save($event)">Save
+</button>    
+<br/>
+<br/>
+<h1 [style.color]="titleStyle ?'green':'pink'">
+    {{name}}
+</h1>    
+<br/>
