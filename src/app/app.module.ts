@@ -8,13 +8,20 @@ import { BindingComponent } from './binding/binding.component';
 import { NestedComponent } from './binding/nested.component';
 import { IOModule } from './input-output/input-output.module';
 import { DIModule } from './di/di.module';
+import { CompLifeCycleComponent,ChildComponent } from './comlifecycle/comlifecycle.component';
+import { ParentComponent } from './viewchild/parent.component';
+import { ViewChildComponent } from './viewchild/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
     BindingComponent,
-    NestedComponent
+    NestedComponent,
+    CompLifeCycleComponent,
+    ChildComponent,
+    ParentComponent,
+    ViewChildComponent
   ],
   imports: [
     BrowserModule,
